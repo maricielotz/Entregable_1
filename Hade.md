@@ -39,7 +39,7 @@ CREATE TABLE Empleados_Especialidades (
 (id_especialidad)
 );
 
-### EMPLEADOS
+#### EMPLEADOS
 INSERT INTO Empleados (id_empleado, nombre, apellido, fecha_contratacion, id_departamento, 
 salario) VALUES
 (1, 'Juan', 'Perez', '2015-03-15', 1, 2500.00),
@@ -47,49 +47,27 @@ salario) VALUES
 (3, 'Pedro', 'Lopez', '2016-05-10', 1, 3000.00),
 (4, 'Ana', 'Martinez', '2014-02-28', 3, 3200.00);
 
-
-
--- DEPARTAMENTOS
-
+#### DEPARTAMENTOS
 INSERT INTO Departamentos (id_departamento, nombre_departamento) VALUES
-
 (1, 'Medicina General'),
-
 (2, 'Pediatría'),
-
 (3, 'Cirugía'),
-
 (4, 'Odontología');
 
- 
-
- -- ESPECIALIDADES
-
- INSERT INTO Especialidades (id_especialidad, nombre_especialidad) VALUES
-
+#### ESPECIALIDADES
+INSERT INTO Especialidades (id_especialidad, nombre_especialidad) VALUES
 (1, 'Cardiología'),
-
 (2, 'Dermatología'),
-
 (3, 'Ginecología'),
-
 (4, 'Neurología');
 
-
-
--- ADICIONAL
-
+### ADICIONAL
 INSERT INTO Empleados_Especialidades (id_empleado, id_especialidad) VALUES
-
 (1, 1),
-
 (1, 2);
 
 
-
-
-
--- PROCEDIMIENTOS ALMACENADOS
+ PROCEDIMIENTOS ALMACENADOS
 
 --1.
 
