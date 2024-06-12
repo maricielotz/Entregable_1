@@ -5,7 +5,7 @@ GO
 USE BD_CLINICA
 GO
 
-###Tabla Empleados
+### Tabla Empleados
 CREATE TABLE Empleados (
   id_empleado INT PRIMARY KEY,
   nombre VARCHAR(50),
@@ -17,19 +17,19 @@ CREATE TABLE Empleados (
 Departamentos(id_departamento)
 );
 
-###Tabla Departamentos
+### Tabla Departamentos
 CREATE TABLE Departamentos (
   id_departamento INT PRIMARY KEY,
   nombre_departamento VARCHAR(100)
 );
 
-###Tabla Especialidades
+### Tabla Especialidades
 CREATE TABLE Especialidades (
   id_especialidad INT PRIMARY KEY,
   nombre_especialidad VARCHAR(100)
 );
 
-###Tabla Adicional 
+### Tabla Adicional 
 CREATE TABLE Empleados_Especialidades (
   id_empleado INT,
   id_especialidad INT,
@@ -39,7 +39,7 @@ CREATE TABLE Empleados_Especialidades (
 (id_especialidad)
 );
 
-###EMPLEADOS
+### EMPLEADOS
 INSERT INTO Empleados (id_empleado, nombre, apellido, fecha_contratacion, id_departamento, 
 salario) VALUES
 (1, 'Juan', 'Perez', '2015-03-15', 1, 2500.00),
